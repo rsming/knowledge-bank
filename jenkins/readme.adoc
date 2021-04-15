@@ -10,13 +10,19 @@ docker run --name jenkins --publish 8080:8080 --publish 50000:50000 \
  --detach jenkins/jenkins:lts
 ```
 
+```
 Jenkins initial setup is required. An admin user has been created and a password generated. Please use the following password to proceed to installation:
 
 7e5d35a8222449949cfe95b302a64b16
 
 This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+```
 
-Credentials: jenkins/jenkins
+`docker exec jenkins ls /var/jenkins_home/secrets/initialAdminPassword`
+
+After initialisation this password will go.
+
+Credentials created: `jenkins/jenkins`
 
  - blue ocean
  - build overview
