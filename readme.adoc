@@ -9,4 +9,4 @@
 
 General knowlwdge needed to support all my projects
 
-link:jenkins.adoc[jenkins]
+link:./jenkins/readme.adoc[jenkins]
