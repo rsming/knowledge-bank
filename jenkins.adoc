@@ -1,6 +1,6 @@
 image::./jenkins.png[]
 
-=== run jenkins in docker ==
+=== run jenkins in docker ===
 
 ```
 docker run --name jenkins --publish 8080:8080 --publish 50000:50000 \
