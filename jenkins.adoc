@@ -1,0 +1,20 @@
+```
+       _            __   _           
+      (_)__  ____  / /__(_)___  _____
+     / / _ \/ __ \/ //_/ / __ \/ ___/
+    / /  __/ / / / ,< / / / / (__  ) 
+ __/ /\___/_/ /_/_/|_/_/_/ /_/____/  
+/___/                                
+```
+
+image::jenkins.png
+
+=== run jenkins in docker ==
+
+```
+docker run --name jenkins --publish 8080:8080 --publish 50000:50000 \
+ --volume jenkins_home:/var/jenkins_home \
+ --volume /var/run/docker.sock:/var/run/docker.sock \
+ --volume $(which docker):/usr/bin/docker \
+ --detach jenkins/jenkins:lts
+```
