@@ -18,11 +18,11 @@ Jenkins initial setup is required. An admin user has been created and a password
 This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-`docker exec jenkins ls /var/jenkins_home/secrets/initialAdminPassword`
+One cat read initialisation password by executing: `docker exec jenkins ls /var/jenkins_home/secrets/initialAdminPassword`
 
 After initialisation this password will go.
 
-Credentials created: `jenkins/jenkins`
+Use this password and create admin credentials: `jenkins/jenkins`
 
  - blue ocean
  - build overview
