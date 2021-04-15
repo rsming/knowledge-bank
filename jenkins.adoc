@@ -1,4 +1,4 @@
-image::./jenkins.png[jenkins logo]
+image::./jenkins.png
 
 === run jenkins in docker ==
 
