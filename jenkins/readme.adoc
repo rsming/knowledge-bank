@@ -26,6 +26,8 @@ Use this password and create admin credentials: `jenkins/jenkins`
 
 === plugins installation ===
 
+add plugins docker , docker pipeline
+
 `docker exec jenkins jenkins-plugin-cli --plugins blueocean:1.24.6`
 
 Plugins can be founs on `http://updates.jenkins-ci.org/download/plugins/`
