@@ -7,6 +7,6 @@
                                       /____/                                     
 ```
 
-General knowlwdge needed to support all my projects
+General knowledge needed to support all my projects
 
 link:./jenkins/readme.adoc[jenkins]
