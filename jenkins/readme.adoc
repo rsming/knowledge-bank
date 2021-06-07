@@ -2,6 +2,8 @@ image::./jenkins.png[]
 
 === run jenkins in docker ===
 
+https://www.jenkins.io/doc/book/installing/docker/
+
 build image `jenkins-docker` from link:./Dockerfile[Dockerfile]
 
 `docker build --tag jenkins-docker .`
