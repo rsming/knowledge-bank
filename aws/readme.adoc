@@ -5,7 +5,7 @@ image::./aws.png[]
 Update / create stack
 
 ```sh
-aws cloudformation validate-template --template-file TEMPLATE_YAML_OR_JSON --region ${AWS_REGION}
+aws cloudformation validate-template --template-body TEMPLATE_YAML_OR_JSON --region ${AWS_REGION}
 aws cloudformation deploy --parameter-overrides parm1=value1,parm2=value2 \
     --region ${AWS_REGION} --template-file TEMPLATE_YAML_OR_JSON \
     --stack-name ${CLOUDFORMATION_STACK_NAME}
