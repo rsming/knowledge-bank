@@ -13,6 +13,10 @@ aws cloudformation delete-stack --region ${AWS_REGION} --stack-name ${CLOUDFORMA
 aws cloudformation list-stacks --region ${AWS_REGION}
 ```
 
+AWS_REGION: `us-east-1`
+
+for dry run add `--dry-run`
+
 ```
 aws help
 aws ec2 describe-instances --region ${AWS_REGION}
