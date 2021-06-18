@@ -25,13 +25,13 @@ docker run --name jenkins-blueocean --detach \
   jenkins-blueocean:1.1
 ```
 
-```
-Jenkins initial setup is required. An admin user has been created and a password generated. Please use the following password to proceed to installation:
 
-7e5d35a8222449949cfe95b302a64b16
+>>> Jenkins initial setup is required. An admin user has been created and a password generated. Please use the following password to proceed to installation:
 
-This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
-```
+>>>7e5d35a8222449949cfe95b302a64b16
+
+>>>This may also be found at: /var/jenkins_home/secrets/initialAdminPassword
+
 
 One cat read initialisation password by executing: `docker exec jenkins cat /var/jenkins_home/secrets/initialAdminPassword`
 
