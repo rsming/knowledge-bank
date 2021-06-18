@@ -1,0 +1,21 @@
+image::./aws.png[]
+
+= aws commands =
+
+Update / create stack
+
+```sh
+aws cloudformation validate-template --template-file TEMPLATE_YAML_OR_JSON --region ${AWS_REGION}
+aws cloudformation deploy --parameter-overrides parm1=value1,parm2=value2 \
+    --region ${AWS_REGION} --template-file TEMPLATE_YAML_OR_JSON \
+    --stack-name ${CLOUDFORMATION_STACK_NAME}
+aws cloudformation delete-stack --region ${AWS_REGION} --stack-name ${CLOUDFORMATION_STACK_NAME}
+aws cloudformation list-stacks --region ${AWS_REGION}
+```
+
+```
+aws help
+aws ec2 describe-instances --region ${AWS_REGION}
+aws ec2 describe-instance-attribute --attribute userData --instance-id ${EC2_INSTANCE_ID} --region ${AWS_REGION}
+aws cloudformation describe-stack-events --stack-name ${CLOUDFORMATION_STACK_NAME} --region ${AWS_REGION}
+```
