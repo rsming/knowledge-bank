@@ -1,0 +1,17 @@
+
+
+letsencrypt
+
+certbot
+
+```
+docker run --rm -it \
+  --env AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+  --env AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+  --volume "$PWD/ssh:/etc/letsencrypt" certbot/dns-route53 certonly \
+  --dns-route53 \
+  -d stockreaper.shrugcoding.click -m "rustam.mingazov@gmail.com" --agree-tos
+```
+
+https://letsencrypt.org/
+https://certbot.eff.org/
