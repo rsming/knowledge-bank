@@ -23,3 +23,9 @@ aws ec2 describe-instances --region ${AWS_REGION}
 aws ec2 describe-instance-attribute --attribute userData --instance-id ${EC2_INSTANCE_ID} --region ${AWS_REGION}
 aws cloudformation describe-stack-events --stack-name ${CLOUDFORMATION_STACK_NAME} --region ${AWS_REGION}
 ```
+
+for reading hosted zone ids
+
+```
+aws route53 list-hosted-zones-by-name
+```
